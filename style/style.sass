@@ -7,8 +7,14 @@ body
     font-family: 'Poppins', sans-serif
     
 .container
-    width: 100%
+    width: 80%
     margin: auto
+
+
+.row 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
 
 .white-font 
     color: white  
@@ -36,6 +42,7 @@ nav
             font-size: 1.5 rem !important
             font-weight: 400
             text-decoration: none
+
     .right-section
         width: 20%
         display: flex
@@ -63,18 +70,30 @@ nav
             text-transform: uppercase
             font-size: 3rem
         .container
-            display: flex
+            display: grid
             align-items: center
+            padding-left: 15px;
+            padding-right: 15px;
             justify-content: space-between
+            grid-template-columns: auto auto
             height: 100%
             margin-top: 0%
+            margin-right: 10%
+            margin-left: 10%
             width: 80% !important
 
-.top-section-image
-    // position: absolute
-    right: 0
-    margin-left: 0
-    // padding: 30%
+
+
+
+#top-section-image
+    position: absolute
+    right: 0   
+    top: 19%rem
+    width: 41rem
+    height: auto
+    border: none
+    display: none
+
 
 .primary-button
     display: flex
@@ -89,3 +108,23 @@ nav
     font-family: 'Poppins', sans-serif
     border: 1px solid rgba(255, 119, 176, 1);
 
+
+.description-section
+    background-color: #131313;
+    height: 132vh
+    width: 100%
+    .continer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: auto
+        width: 80%
+        height: 100vh
+        .left-section
+            width: 36.6rem
+            height: 46.1rem
+            border: 10% solid #131313
+            background-image: #131313
+        .right-section
+            
+            

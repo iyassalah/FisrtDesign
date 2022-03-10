@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
 @import url("http://fonts.cdnfonts.com/css/big-john");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -20,6 +21,14 @@ body {
 
 .white-font {
   color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2;
+}
+
+.secondery-button {
+  border: 1px solid #FF77B0;
+  font-size: 1.18rem;
+  background-color: #131313;
 }
 
 nav {
@@ -38,12 +47,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-nav nav.scrolled {
-  background-color: black !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
 }
 
 nav .logo-section {
@@ -66,12 +69,25 @@ nav .right-section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-conten: center !important;
+}
+
+h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.numbers {
+  color: #DA69A3;
+  font-family: 'Rubik', sans-serif;
+  font-size: 4.1rem;
 }
 
 #top-section {
+  overflow: hidden;
   background-image: url("../images/top-background.png");
   background-size: cover;
   height: 100%;
@@ -86,20 +102,15 @@ nav .right-section {
   width: 100%;
 }
 
-#top-section .liner-gradiant h1 {
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
 #top-section .liner-gradiant .container {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
   -webkit-box-pack: justify;
@@ -112,16 +123,18 @@ nav .right-section {
   margin-right: 10%;
   margin-left: 10%;
   width: 80% !important;
+  overflow: hidden;
 }
 
 #top-section-image {
   position: absolute;
-  right: 0;
-  top: 19%rem;
+  overflow: hidden;
+  right: -3rem;
+  padding-left: 3rem;
+  top: 19%;
   width: 41rem;
-  height: auto;
+  height: 41rem;
   border: none;
-  display: none;
 }
 
 .primary-button {
@@ -153,21 +166,75 @@ nav .right-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10%;
+  width: 80%;
+  height: 132vh;
+}
+
+.description-section .continer .left-section {
+  margin-top: 10%;
+  width: 29.28rem;
+  height: 36.88rem;
+  background-image: #131313;
+  border: 10% solid #131313;
+}
+
+.description-section .continer .left-section .statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  width: 80%;
-  height: 100vh;
+  margin-top: 5%;
 }
 
-.description-section .continer .left-section {
-  width: 36.6rem;
-  height: 46.1rem;
-  border: 10% solid #131313;
-  background-image: #131313;
+.description-section .continer .right-section {
+  overflow: hidden;
+  width: 63rem;
+  height: 39rem;
+  margin-top: 5%;
+}
+
+.description-section .continer .right-section .description-section-images {
+  position: absolute;
+  right: -15rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav .right-section > a:not(:last-child) {
+    display: none;
+  }
+  .topnav .right-section > a:last-child {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.right-section.responsive #nva-menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.right-section.responsive a:not(:last-child) {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */

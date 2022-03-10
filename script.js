@@ -1,8 +1,21 @@
-const navbar = document.querySelector('.nav-bar');
-window.onscroll = () => {
-    if (window.scrollY > 300) {
-        navbar.classList.add('nav-active');
+function burgerMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "") {
+      x.className += "responsive";
     } else {
-        navbar.classList.remove('nav-active');
+      x.className = "";
     }
-};
+}
+
+  
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          $(".topnav").css("background" , "#131313");
+        }
+        else{
+            $(".topnav").css("background" , "#333");  	
+        }
+    })
+  })

@@ -6,6 +6,8 @@
 body
     margin: 0
     font-family: 'Poppins', sans-serif
+    z-index: 10;
+
     
 .container
     width: 80%
@@ -30,6 +32,7 @@ body
 
 
 nav
+    position: absolute
     margin-left: 10%;
     margin-right: 10%
     position: fixed !important
@@ -39,7 +42,7 @@ nav
     width: 80%
     align-items: center
     justify-content: space-between
-
+    z-index: 10
     .logo-section
         width: 20%
         .logo
@@ -71,22 +74,23 @@ h1
     font-size: 4.1rem
 
 
-
-
 #top-section
+    z-index: 3
     overflow: hidden
     background-image: url("../images/top-background.png")
     background-size: cover
     height: 100%
     width: 100%
     top: 0
+    z-index: 3
     .liner-gradiant
+        display: flex
+        flex-wrap: wrap
         background: linear-gradient(132deg, rgba(131,56,159,.86) 0%, rgba(55,106,131,.86) 50%, rgba(75,75,205,.86) 100%)
         background-size: cover
         height: 100vh
         width: 100%
         // opacity: .86
-        
         .container
             display: flex
             align-items: center
@@ -101,20 +105,20 @@ h1
             margin-left: 10%
             width: 80% !important
             overflow: hidden
+            z-index: 3
 
-
+//image appear in the top section of the page.
 #top-section-image
     position: absolute
     overflow: hidden
+    align-self: center
     right: -3rem
-    padding-left: 3rem 
-    top: 19%
     width: 41rem
     height: 41rem
     border: none
-    // display: none
+    z-index: 2
 
-
+//the primery button on the wibsite (pink button).
 .primary-button
     display: flex
     justify-content: space-around
@@ -128,45 +132,54 @@ h1
     font-family: 'Poppins', sans-serif
     border: 1px solid rgba(255, 119, 176, 1);
 
-
+//second sectino of the website and have the description of the site.
 .description-section
+    z-index: 3
     background-color: #131313;
     height: 132vh
     width: 100%
     .continer
+        z-index: 3
         display: flex
         flex-wrap: wrap
         justify-content: space-between
         // align-items: center
-        // align-content: center
+        align-content: center
+        align-content: space-around
         margin-left: 10%
-        width: 80%
+        width: 90%
         height: 132vh
+        overflow: hidden
         .left-section
-            margin-top: 10%     
+            z-index: 3
+            align-self: center
+            // margin-top: 10%     
             width: 29.28rem
             height: 36.88rem
             background-image: #131313
             border: 10% solid #131313
-            .statistics
+            .statistics 
                 display: flex
                 flex-wrap: wrap
                 justify-content: space-between
                 align-items: center
                 margin-top: 5%
-
-        .right-section
-            // display: none
+        .description-section-images
+            z-index: 2
+            width: 50rem // ratio : 
+            height: 56rem
+            // position: absolute
+            right: -11rem
             overflow: hidden
-            width: 63rem
-            height: 39rem
-            margin-top: 5%
-            .description-section-images
-                position: absolute
-                right: -15rem
-                overflow: hidden
+            align-self: center
+            justify-self: flex-end
+        #big-ring
+            position: absolute
+            z-index: 1
 
+        
 
+//this query work to display the burger menu and disappear of other icons in the nav bar
 @media screen and (max-width: 900px) 
     .topnav .right-section > a:not(:last-child)
         display: none
@@ -175,7 +188,7 @@ h1
         display: block
 
 
-
+//This query used for the responseve nav menu: burger menu appear if current width is less than 900px
 @media screen and (max-width: 900px) 
     .topnav.responsive 
         position: relative  

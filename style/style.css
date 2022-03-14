@@ -5,6 +5,8 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   z-index: 10;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -245,23 +247,27 @@ h1 {
 }
 
 .slider-section .container {
+  margin-top: 10% !important;
+  width: 100%;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
   margin: auto;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   justify-content: center;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
   height: 90%;
+}
+
+.slider-section .container .slider-section-header {
+  width: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .slider-section .container .slider-section-header h1 {
@@ -269,6 +275,92 @@ h1 {
   color: black;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+}
+
+.slider-section .container .slider-section-header p {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.slider-section .container .slider-section-bar {
+  width: 100%;
+  margin-left: 33%;
+  margin-right: 33%;
+  height: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
+}
+
+.slider-section .container .slider-section-bar .slider-section-buttoms {
+  text-align: top;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.slider-section .container .slider-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: 45%;
+  margin-right: 45%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #FFFFFF;
+}
+
+.slider-section .container .slider-control .slider-control-buttom {
+  text-align: top;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.slider-section .container .slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.slider-section .container .slider-container .slider-image {
+  height: 50rem;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.slider-section .container .buttons-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: ceter;
+      align-self: ceter;
+}
+
+.white-background {
+  background: white;
+}
+
+.pink-font {
+  color: #DA69A3;
 }
 
 @media screen and (max-width: 900px) {

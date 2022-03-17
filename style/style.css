@@ -355,6 +355,24 @@ h1 {
       align-self: ceter;
 }
 
+.last-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #131313;
+}
+
+.last-section .container {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+}
+
+.last-section .container h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
 .white-background {
   background: white;
 }

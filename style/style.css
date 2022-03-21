@@ -48,15 +48,13 @@ hr {
 
 nav {
   position: absolute;
-  margin-left: 10%;
-  margin-right: 10%;
   position: fixed !important;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 10%;
-  width: 80%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -68,6 +66,7 @@ nav {
 
 nav .logo-section {
   width: 20%;
+  margin-left: 10%;
 }
 
 nav .logo-section .logo {
@@ -80,6 +79,7 @@ nav .logo-section .logo {
 
 nav .right-section {
   width: 20%;
+  margin-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,6 +456,7 @@ h1 {
   color: white;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
 }
 
 .last-section .container .about-us-box {
@@ -510,7 +511,7 @@ h1 {
 
 .last-section .container hr {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: 5rem;
 }
 
@@ -613,6 +614,49 @@ h1 {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 1286px) {
+  #top-section-image {
+    display: none;
+  }
+  #top-section .liner-gradiant .container .left-items {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top-section > h1 {
+    font-size: 1rem;
+  }
+  .top-section > p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .description-section .continer {
+    justify-items: center;
+  }
+  .description-section .continer .description-section-images {
+    display: none;
+  }
+  .description-section .continer .left-section {
+    width: 80%;
+    height: 80%;
+  }
+  .description-section .continer .numbers {
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .topnav .right-section > a:not(:last-child) {
     display: none;
@@ -620,6 +664,12 @@ h1 {
   .topnav .right-section > a:last-child {
     float: right;
     display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .last-section .container .about-us-box .about-us p {
+    font-size: .8rem;
   }
 }
 

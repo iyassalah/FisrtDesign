@@ -7,31 +7,14 @@ function burgerMenu() {
     }
 }
 
+window.onscroll = function() {scrollFunction()};
 
-
-var slide_index = 1 ; 
- 
-let slides = [
-    "1.jpg",
-    "2.jpg",
-    "3.jpg",
-    "4.jpg",
-    "4.jpg"];   
-    displaySlides(slide_index); 
-        
-    function nextSlide(n) {  
-        displaySlides(slide_index += n);  
-    }   
-    function displaySlides(n) {  
-        var i;  
-        if (n > slides.length) {
-            slide_index = 1
-        }  
-        if (n < 1) {
-            slide_index = slides.length
-        }
-
-        $(document).ready(function(){
-            $('#slide').attr('src', slides[slide_index]);
-        }); 
-    }  
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("my-nav").style.background = "#131313";
+    // document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("my-nav").style.background = "none";
+    // document.getElementById("logo").style.fontSize = "35px";
+  }
+}

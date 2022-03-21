@@ -42,18 +42,19 @@ hr
 
 nav
     position: absolute
-    margin-left: 10%;
-    margin-right: 10%
+    
     position: fixed !important
     top: 0  
     display: flex
     height: 10%
-    width: 80%
+    width: 100%
+    align-self: 
     align-items: center
     justify-content: space-between
     z-index: 10
     .logo-section
         width: 20%
+        margin-left: 10%
         .logo
             font-family: 'Big John', sans-serif;
             text-align: center
@@ -63,6 +64,7 @@ nav
 
     .right-section
         width: 20%
+        margin-right: 10%
         display: flex
         justify-content: space-between
         align-conten: center !important
@@ -121,6 +123,8 @@ h1
             width: 80% !important
             overflow: hidden
             z-index: 3
+            .left-items
+                width: 
         .follow
             height: 3.5rem
             z-index: 5
@@ -129,7 +133,6 @@ h1
             // margin-top: 10%
             // margin-bottom: 10%
             margin-left: 10%
-            
             text-align: center
             display: flex
             justify-content: space-around
@@ -315,6 +318,7 @@ h1
             color: white
             text-align: center
             font-family: 'Poppins', sans-serif  
+            font-size: 2.2rem
         .about-us-box
             height: 50%
             width: 100%
@@ -352,7 +356,7 @@ h1
 
         hr
             width: 100%
-            margin-top: 5%
+            margin-top: 3%
             font-size: 5rem
 
         .items
@@ -400,6 +404,36 @@ h1
                 justify-content: flex-end
             
 
+@media screen and (max-width: 1286px) 
+    #top-section-image 
+        display: none
+    #top-section .liner-gradiant .container .left-items
+        width: 100% !important
+
+@media screen and (max-width: 900px) 
+    .top-section > h1 
+        font-size: 1rem
+    .top-section > p
+        font-size: 1rem
+
+
+@media screen and (max-width: 900px) 
+    h1
+        font-size: 2rem
+    p
+        font-size: .9rem
+
+@media screen and (max-width: 1420px) 
+    .description-section .continer
+        justify-items: center
+    .description-section .continer .description-section-images
+        display: none
+    .description-section .continer .left-section
+        width: 80%
+        height: 80%
+    .description-section .continer .numbers
+        font-size: 1.8rem
+
 //this query work to display the burger menu and disappear of other icons in the nav bar
 @media screen and (max-width: 900px) 
     .topnav .right-section > a:not(:last-child)
@@ -408,6 +442,11 @@ h1
         float: right
         display: block
 
+
+@media screen and (max-width: 1000px) 
+    .last-section .container .about-us-box .about-us p
+        font-size: .8rem
+    
 
 //This query used for the responseve nav menu: burger menu appear if current width is less than 900px
 @media screen and (max-width: 900px) 

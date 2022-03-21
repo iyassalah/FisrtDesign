@@ -31,7 +31,14 @@ body
     font-size: 1.18rem
     background-color: #131313
 
+.white-background
+    background: white
 
+.pink-font
+    color: #DA69A3
+
+hr
+    color: #707070
 
 nav
     position: absolute
@@ -72,8 +79,12 @@ h1
 .numbers
     color: #DA69A3
     font-family: 
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Rubik', sans-serif
     font-size: 4.1rem
+
+.pink-icon
+    background: none
+    color: #DA69A3
 
 
 #top-section
@@ -88,6 +99,8 @@ h1
     .liner-gradiant
         display: flex
         flex-wrap: wrap
+        align-items: center
+        justify-content: space-around
         background: linear-gradient(132deg, rgba(131,56,159,.86) 0%, rgba(55,106,131,.86) 50%, rgba(75,75,205,.86) 100%)
         background-size: cover
         height: 100vh
@@ -97,17 +110,41 @@ h1
             display: flex
             align-items: center
             flex-wrap: wrap
-            padding-left: 15px;
-            padding-right: 15px;
+            // padding-left: 15px;
+            // padding-right: 15px;
             justify-content: space-between
             grid-template-columns: auto auto
-            height: 100%
-            margin-top: 0%
+            height: 50%
+            margin-top: 10%
             margin-right: 10%
             margin-left: 10%
             width: 80% !important
             overflow: hidden
             z-index: 3
+        .follow
+            height: 3.5rem
+            z-index: 5
+            width: 100%
+            margin-right: 70%
+            // margin-top: 10%
+            // margin-bottom: 10%
+            margin-left: 10%
+            
+            text-align: center
+            display: flex
+            justify-content: space-around
+            align-items: center
+            flex: 2
+            border: 1px solid #FFFFFF
+            button
+                background: none
+                border: none
+            p
+                flex: 1
+            .follow-icons
+                display: flex
+                justify-content: space-around
+                flex: 1
 
 //image appear in the top section of the page.
 #top-section-image
@@ -256,30 +293,112 @@ h1
             align-self: ceter
 
 .last-section
-    width: 100%
-    height: 100vh
+    width: 100vw
+    height: 110vh
     background-color: #131313
+    display: flex
+    justify-content: center
+    align-items: center
     // background: linear-gradient(0deg, rgba(50,50,50,.3) 0%, rgba(0,0,0,.3) 100%);
     .container
         width: 80%
-        height: 100vh
+        height: 80%
         margin: auto
+        // align-self: center
+        display: flex
+        flex-wrap: wrap
+        justify-content:  center
         h2
+            text-shadow: .3rem .3rem #272D4E
+            width: 100%
+            align-self: center
             color: white
             text-align: center
             font-family: 'Poppins', sans-serif  
-        
+        .about-us-box
+            height: 50%
+            width: 100%
+            margin-top: 5%
+            margin-left: 25%
+            margin-right: 25%
+            background-color: #353535
+            border-radius: 1rem
+            // text-align: center
+            .about-us 
+                display: flex
+                justify-content: space-around
+                align-content: center  
+                width: 80%
+                height: 80%
+                margin: auto
+                margin-top: 5%
+                // margin: auto
+                p
+                    line-height: 1.8 !important
+                    font-size: .9rem
+        .arrows
+            width: 100%
+            height: 10%
+            margin: auto
+            margin-left: 60% !important
+            margin-right: 30% !important
+            display: flex
+            justify-content: space-around
+            .arrow
+                background: none !important
+                border: none
+                color: #DA69A3
+                transform: scale(1.5);
 
+        hr
+            width: 100%
+            margin-top: 5%
+            font-size: 5rem
 
+        .items
+            display: none
 
-
-.white-background
-    background: white
-
-.pink-font
-    color: #DA69A3
-
-                
+        .my-footer
+            width: 100%
+            height: 10%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-content: center
+            font-size: .7rem
+            .left-section
+                width: 60%
+                // justify-self: flex-start
+                display: flex
+                justify-content: space-between
+                align-items: center
+                flex: 10
+                .follow
+                    text-align: center
+                    display: flex
+                    justify-content: space-around
+                    align-items: center
+                    flex: 2
+                    border: 1px solid #FFFFFF
+                    p
+                        flex: 1
+                    .follow-icons
+                        display: flex
+                        justify-content: space-around
+                        flex: 1
+                .contact
+                    // display: none
+                    display: flex
+                    justify-content: space-around
+                    align-items: center
+                    flex: 4 
+            .right-section
+                width: 40%
+                display: flex
+                align-items: center
+                flex: 5
+                justify-content: flex-end
+            
 
 //this query work to display the burger menu and disappear of other icons in the nav bar
 @media screen and (max-width: 900px) 

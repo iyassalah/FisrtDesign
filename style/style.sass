@@ -31,6 +31,7 @@ body
     font-size: 1.18rem
     background-color: #131313
 
+
 .white-background
     background: white
 
@@ -42,7 +43,6 @@ hr
 
 nav
     position: absolute
-    
     position: fixed !important
     top: 0  
     display: flex
@@ -52,6 +52,8 @@ nav
     align-items: center
     justify-content: space-between
     z-index: 10
+    button:hover
+        cursor: pointer
     .logo-section
         width: 20%
         margin-left: 10%
@@ -148,6 +150,10 @@ h1
                 display: flex
                 justify-content: space-around
                 flex: 1
+            i:hover
+                cursor: pointer
+                color:   #DA69A3 
+                transform: scale(1.5)  
 
 //image appear in the top section of the page.
 #top-section-image
@@ -172,7 +178,16 @@ h1
     opacity: 1
     border-radius: 0%
     font-family: 'Poppins', sans-serif
-    border: 1px solid rgba(255, 119, 176, 1);
+    border: 1px solid rgba(255, 119, 176, 1)
+
+.primary-button:hover
+    background-color: #131313
+    cursor: pointer
+    // transform: scale(1.1)
+
+.slider-section .container .buttons-holder .secondery-button:hover
+    background-color: #131313
+    cursor: pointer
 
 //second sectino of the website and have the description of the site.
 .description-section
@@ -193,6 +208,9 @@ h1
         height: 132vh
         overflow: hidden
         .left-section
+            .secondery-button:hover
+                background-color: rgba(255, 119, 176, 1)
+                cursor: pointer
             z-index: 3
             align-self: center
             // margin-top: 10%     
@@ -220,12 +238,17 @@ h1
             z-index: 1
             display: none
 
+i:hover
+    scale(1.5)
+    cursor: pointer
+    transform: scale(2)
 
 .slider-section
     width: 100%
     height: 100rem !important
     background-color: #FFFFFF
     .container
+        
         margin-top: 10% !important
         width: 100%
         overflow: hidden
@@ -264,7 +287,11 @@ h1
                 background-color: #FFFFFF
                 // border-bottom: 2px solid black
                 border: none
-                font-family: 'Poppins', sans-serif  
+                font-family: 'Poppins', sans-serif 
+            button:hover
+                border-bottom: 1px solid black
+                cursor: pointer
+
         .slider-control
             display: flex
             width: 100%
@@ -278,10 +305,15 @@ h1
                 // border-bottom: 2px solid black
                 border: none
                 font-family: 'Poppins', sans-serif  
+            button:hover
+                cursor: pointer
+                color: rgba(255, 119, 176, 1)
         .slider-container
             display: flex
             width: 100vw
             justify-content: space-evenly
+            img:hover
+                transform: scale(1.05)
             .slider-image
                 height: 50rem
                 width: auto
@@ -352,7 +384,7 @@ h1
                 background: none !important
                 border: none
                 color: #DA69A3
-                transform: scale(1.5);
+                transform: scale(1.5)
 
         hr
             width: 100%
@@ -390,6 +422,10 @@ h1
                         display: flex
                         justify-content: space-around
                         flex: 1
+                    i:hover
+                        cursor: pointer
+                        color:   #DA69A3   
+                        transform: scale(1.5)
                 .contact
                     // display: none
                     display: flex

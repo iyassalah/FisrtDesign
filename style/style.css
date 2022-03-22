@@ -64,6 +64,10 @@ nav {
   z-index: 10;
 }
 
+nav button:hover {
+  cursor: pointer;
+}
+
 nav .logo-section {
   width: 20%;
   margin-left: 10%;
@@ -202,6 +206,13 @@ h1 {
           flex: 1;
 }
 
+#top-section .liner-gradiant .follow i:hover {
+  cursor: pointer;
+  color: #DA69A3;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 #top-section-image {
   position: absolute;
   overflow: hidden;
@@ -232,6 +243,16 @@ h1 {
   border-radius: 0%;
   font-family: 'Poppins', sans-serif;
   border: 1px solid #ff77b0;
+}
+
+.primary-button:hover {
+  background-color: #131313;
+  cursor: pointer;
+}
+
+.slider-section .container .buttons-holder .secondery-button:hover {
+  background-color: #131313;
+  cursor: pointer;
 }
 
 .description-section {
@@ -270,6 +291,11 @@ h1 {
   border: 10% solid #131313;
 }
 
+.description-section .continer .left-section .secondery-button:hover {
+  background-color: #ff77b0;
+  cursor: pointer;
+}
+
 .description-section .continer .left-section .statistics {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,6 +327,12 @@ h1 {
   position: absolute;
   z-index: 1;
   display: none;
+}
+
+i:hover {
+  cursor: pointer;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .slider-section {
@@ -368,6 +400,11 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
+.slider-section .container .slider-section-bar button:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
 .slider-section .container .slider-control {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,6 +424,11 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
+.slider-section .container .slider-control button:hover {
+  cursor: pointer;
+  color: #ff77b0;
+}
+
 .slider-section .container .slider-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,6 +437,11 @@ h1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.slider-section .container .slider-container img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .slider-section .container .slider-container .slider-image {
@@ -582,6 +629,13 @@ h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.last-section .container .my-footer .left-section .follow i:hover {
+  cursor: pointer;
+  color: #DA69A3;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .last-section .container .my-footer .left-section .contact {
